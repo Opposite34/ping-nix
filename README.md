@@ -2,8 +2,9 @@
 
 ## Packages
 
-- furnace-appimage is the appimage extract of the
-  [Furnace Music Tracker](https://github.com/tildearrow/furnace)
+- `furnace-appimage` is the appimage extract of the
+  [Furnace Music Tracker](https://github.com/tildearrow/furnace).
+
   I did this because the one from the compilation segfaulted
   (it complained something about not finding window to create,
   and nixGL didn't fix it either)
