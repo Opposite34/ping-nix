@@ -4,7 +4,7 @@
 
   src = pkgs.fetchurl {
     url = "https://github.com/tildearrow/furnace/releases/download/v${version}/${pname}-${version}-x86_64.AppImage";
-    hash = "sha256-924123080a264ee7c1464f95f2dbe757248362fb5b34c417af947ac871100e0c";
+    hash = "=sha256-DJcgJMekoxVesl9kKjfLPix2Nbr42i7cpEHJiTnBUwU%3D»/nix/store/0sg4h9ihh33mpg0lsc8idsir4zb9p2xj";
   };
   appimageContents = pkgs.appimageTools.extract {inherit pname version src;};
 in
