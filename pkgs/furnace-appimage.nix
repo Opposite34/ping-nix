@@ -1,10 +1,10 @@
 { pkgs, ... }: let
   pname = "furnace";
-  version = "0.6.8.2";
+  version = "0.6.8.3";
 
   src = pkgs.fetchurl {
     url = "https://github.com/tildearrow/furnace/releases/download/v${version}/Furnace-${version}-x86_64.AppImage";
-    hash = "sha256-kkEjCAomTufBRk+V8tvnVySDYvtbNMQXr5R6yHEQDgw=";
+    hash = "sha256-rLBcIaakG/jKTtEOsTwEmwuronNSzRXE5/b72RHCtp4=";
   };
   appimageContents = pkgs.appimageTools.extract {inherit pname version src;};
 in
