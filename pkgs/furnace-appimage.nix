@@ -17,12 +17,12 @@ pkgs.appimageTools.wrapType2 {
     cp -r ${appimageContents}/usr/share/icons $out/share
   '';
 
-  meta = with pkgs.lib; {
-    description = "Multi-system chiptune tracker compatible with DefleMask modules";
+  meta = {
+    description = "a multi-system chiptune tracker compatible with DefleMask modules";
     homepage = "https://github.com/tildearrow/furnace";
     changelog = "https://github.com/tildearrow/furnace/releases/tag/v${version}";
-    license = with lib.licenses; [ gpl2Plus ];
-    maintainers = with maintainers; [ opposite34 ];
+    license = pkgs.lib.licenses.gpl2Plus;
+    maintainers = with pkgs.lib.maintainers; [ opposite34 ];
     platforms = [ "x86_64-linux" ];
   };
 }
